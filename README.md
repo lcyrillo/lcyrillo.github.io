@@ -1,16 +1,29 @@
-## Hi there 👋
+Hi, I'm Lucas Cyrillo 👋
 
-<!--
-**lcyrillo/lcyrillo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am a Software Engineer with over 10 years of experience dedicated to building scalable, robust, and clean applications. My passion lies in architectural design, turning complex requirements into structured, maintainable code.
 
-Here are some ideas to get you started:
+🛠 Tech Stack & Expertise
+Backend: .NET (Core/5+)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Frontend: Angular
+
+Architecture & Patterns: Clean Architecture enthusiast—I believe in a strict separation of Domain, Application, and Infrastructure layers.
+
+Integration: System integrations and messaging patterns (e.g., RabbitMQ).
+
+📚 Currently Learning & Expanding
+Containers & Orchestration: Kubernetes (AKS) & Docker
+
+Cloud Architecture: AWS
+
+API Design: Advanced RESTful API design patterns
+
+🚀 What I'm Working On
+Currently, I am focused on evolving microservices-based architectures, shifting from local development environments to cloud-native deployments. I enjoy tackling the challenges of modern e-commerce systems and ensuring high availability through smart infrastructure choices.
+
+📫 Connect with me
+LinkedIn: linkedin.com/in/lcyrillo
+
+GitHub: github.com/lcyrillo
+
+Always learning, always building.
