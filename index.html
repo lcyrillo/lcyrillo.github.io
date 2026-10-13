@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Cyrillo | Engenharia de Software & Arquitetura de Sistemas</title>
-    <!-- Tailwind CSS para um design moderno e ágil -->
+    <title>Lucas Cyrillo | Engenheiro de Software & Arquitetor de Sistemas</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fontes elegantes -->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,57 +24,89 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-[#0B0F19]/80 backdrop-blur-md border-b border-gray-800/60">
         <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <!-- <img src="image/LOGO.png" alt="Lucas Cyrillo" class="h-10 w-auto"> -->
-                <h1>Lucas Cyrillo</h1>
+                <h1 class="text-xl font-bold text-white tracking-tight">Lucas Cyrillo</h1>
             </div>
             <ul class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
-                <li><a href="https://medium.com/@lucascyrillo" target="_blank"
-                        class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20">BLOG</a>
-                </li>
                 <li><a href="#about" class="hover:text-emerald-400 transition">Quem Sou</a></li>
+                <li><a href="#clients" class="hover:text-emerald-400 transition">Clientes</a></li>
                 <li><a href="#services" class="hover:text-emerald-400 transition">Serviços</a></li>
                 <li><a href="#portfolio" class="hover:text-emerald-400 transition">Projetos</a></li>
+                <li><a href="https://medium.com/@lucascyrillo" target="_blank"
+                        class="hover:text-emerald-400 transition">Blog</a>
+                </li>
                 <li><a href="#contact"
-                        class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20">Falar
-                        com Especialista</a></li>
+                        class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20">Contratar
+                        / Projeto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- HERO SECTION (Onde a venda acontece) -->
+    <!-- HERO SECTION -->
     <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_50%)]">
         </div>
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <!-- Badge Disponível para Projetos -->
             <span
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-6">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Disponível para novos projetos e
-                consultorias
+                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-6 shadow-sm">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> Disponível para novos
+                projetos, contratos e consultorias
             </span>
+
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
-                Construindo Sistemas Modernos, <br class="hidden md:block"> <span
-                    class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Escaláveis e
-                    Altamente Resilientes</span>
+                Engenharia de Software & Arquitetura <br class="hidden md:block"> <span
+                    class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">para Sistemas
+                    Críticos e Escaláveis</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Transformo regras de negócio complexas em arquiteturas limpas e soluções de alto desempenho.
-                Especialista no ecossistema .NET, Angular e microsserviços preparados para a nuvem.
+                Ajudo empresas e startups a construírem e modernizarem ecossistemas de software robustos. Especialista
+                em .NET, Angular, Clean Architecture e soluções em nuvem.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#contact"
                     class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-500 text-slate-950 font-semibold text-base hover:bg-emerald-400 transition shadow-xl shadow-emerald-500/20 text-center">
-                    Agendar uma Reunião Técnica
+                    Solicitar Orçamento / Reunião
                 </a>
                 <a href="#portfolio"
                     class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-gray-800 text-gray-300 font-medium text-base hover:bg-slate-800 transition text-center">
-                    Ver Casos de Sucesso
+                    Ver Projetos
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- EMPRESAS ATENDIDAS / LOGOS -->
+    <section id="clients" class="py-16 border-t border-gray-900 bg-slate-950/60">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-8">
+                Empresas e Instituições que já confiaram no meu trabalho
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">B3</span>
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">Credit
+                    Suisse</span>
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">Banco
+                    Safra</span>
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">Banco
+                    Itaú</span>
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">Banco
+                    Rendimento</span>
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">CREA-SP</span>
+                <span
+                    class="px-5 py-3 bg-slate-900/60 border border-gray-800 rounded-xl text-gray-300 font-medium text-sm hover:border-emerald-500/40 hover:text-white transition">CDHU</span>
+            </div>
+        </div>
+    </section>
+
     <!-- QUEM SOU -->
-    <section id="about" class="py-20 border-t border-gray-900 bg-slate-950/40">
+    <section id="about" class="py-20 border-t border-gray-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
@@ -82,15 +114,16 @@
                         Propósito</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-6">Lucas Cyrillo</h2>
                     <p class="text-gray-400 text-lg leading-relaxed mb-6">
-                        Sou Engenheiro de Software com sólida experiência no desenho e implementação de aplicações
-                        corporativas de missão crítica. Meu foco é garantir que o seu software cresça sem gargalos de
-                        performance ou débitos técnicos.
+                        Sou Engenheiro de Software com sólida experiência no desenvolvimento e arquitetura de sistemas
+                        corporativos de missão crítica para os setores financeiro, imobiliário e público.
                     </p>
-                    <p class="text-gray-400 text-lg leading-relaxed">
-                        Através da aplicação rigorosa de <strong>Clean Architecture</strong>, Domain-Driven Design (DDD)
-                        e mensageria, construo ecossistemas de software robustos, fáceis de manter e prontos para
-                        escalar em ambientes Cloud (Azure/AWS).
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Atuo no desenvolvimento do zero, evolução de sistemas legados e consultoria arquitetural,
+                        aplicando <strong>Clean Architecture</strong>, Domain-Driven Design (DDD) e microsserviços.
                     </p>
+                    <div class="inline-flex items-center gap-2 text-emerald-400 font-semibold">
+                        <span>✓ Disponível para contratos PJ, Freelance e Consultoria Técnica</span>
+                    </div>
                 </div>
                 <div class="order-1 md:order-2 flex justify-center">
                     <div class="relative group">
@@ -105,13 +138,13 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS (Foco em Solução de Negócio) -->
-    <section id="services" class="py-20 border-t border-gray-900">
+    <!-- SERVIÇOS -->
+    <section id="services" class="py-20 border-t border-gray-900 bg-slate-950/40">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-emerald-400 font-semibold tracking-wider text-sm uppercase">Como Posso Ajudar</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Soluções sob medida para o crescimento da sua
-                    empresa</h2>
+                <span class="text-emerald-400 font-semibold tracking-wider text-sm uppercase">Serviços & Soluções</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Como posso ajudar o seu projeto ou empresa
+                </h2>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
@@ -121,11 +154,9 @@
                     <div
                         class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 font-bold text-xl">
                         01</div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Desenvolvimento de Aplicações Web de Alta
-                        Performance</h3>
-                    <p class="text-gray-400 leading-relaxed">Criação de plataformas completas, responsivas e rápidas
-                        utilizando o poder do Angular combinado com backends robustos, priorizando a melhor experiência
-                        para o usuário final.</p>
+                    <h3 class="text-xl font-semibold text-white mb-3">Desenvolvimento Web & Soluções Sob Medida</h3>
+                    <p class="text-gray-400 leading-relaxed">Criação de plataformas completas, portais e dashboards
+                        rápidos e responsivos utilizando Angular no Frontend e .NET no Backend.</p>
                 </div>
                 <!-- Serviço 2 -->
                 <div
@@ -134,9 +165,8 @@
                         class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 font-bold text-xl">
                         02</div>
                     <h3 class="text-xl font-semibold text-white mb-3">Arquitetura de APIs & Microsserviços</h3>
-                    <p class="text-gray-400 leading-relaxed">Desenvolvimento de ecossistemas distribuídos, APIs RESTful
-                        seguras, escaláveis e bem documentadas, utilizando .NET Core, RabbitMQ e mensageria assíncrona.
-                    </p>
+                    <p class="text-gray-400 leading-relaxed">Construção e otimização de APIs RESTful escaláveis, seguras
+                        e distribuídas utilizando .NET Core, RabbitMQ e padrões de mensageria.</p>
                 </div>
                 <!-- Serviço 3 -->
                 <div
@@ -144,10 +174,9 @@
                     <div
                         class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 font-bold text-xl">
                         03</div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Modernização & Refatoração de Legados</h3>
-                    <p class="text-gray-400 leading-relaxed">Migração estratégica de sistemas antigos para arquiteturas
-                        modernas de nuvem (Cloud-Native), eliminando custos invisíveis com manutenção e travamento de
-                        processos.</p>
+                    <h3 class="text-xl font-semibold text-white mb-3">Refatoração & Modernização de Sistemas</h3>
+                    <p class="text-gray-400 leading-relaxed">Migração de sistemas legados para arquiteturas modernas,
+                        organizando o código com Clean Architecture e reduzindo débitos técnicos.</p>
                 </div>
                 <!-- Serviço 4 -->
                 <div
@@ -155,26 +184,28 @@
                     <div
                         class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 font-bold text-xl">
                         04</div>
-                    <h3 class="text-xl font-semibold text-white mb-3">Evolução Segura de Ecossistemas Existentes</h3>
-                    <p class="text-gray-400 leading-relaxed">Análise técnica detalhada, correção de falhas críticas de
-                        performance e implementação de novas features em sistemas legados sem interromper a operação
-                        atual da empresa.</p>
+                    <h3 class="text-xl font-semibold text-white mb-3">Consultoria Técnica & Mentoria de Software</h3>
+                    <p class="text-gray-400 leading-relaxed">Diagnóstico de problemas de performance, revisão de código
+                        (code review), auxílio no desenho arquitetural e orientação para equipes de dev.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PORTFÓLIO (Casos de Sucesso) -->
-    <section id="portfolio" class="py-20 border-t border-gray-900 bg-slate-950/40">
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="py-20 border-t border-gray-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-emerald-400 font-semibold tracking-wider text-sm uppercase">Casos de Sucesso</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Sistemas em Produção que geram valor</h2>
+                <span class="text-emerald-400 font-semibold tracking-wider text-sm uppercase">Projetos &
+                    Portfólio</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Sistemas desenvolvidos e soluções entregues
+                </h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Projeto 1 -->
-                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full">
+                <div
+                    class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full hover:border-gray-700 transition">
                     <div
                         class="overflow-hidden bg-slate-950 flex items-center justify-center p-4 h-48 border-b border-gray-800">
                         <img alt="API de Recebimento" src="image/APIs-swagger.png"
@@ -183,8 +214,8 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-white mb-2">Módulo de Solicitação & Recebimento</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
-                            Desenvolvimento completo da API corporativa para liquidação e gerenciamento de fluxos
-                            financeiros, garantindo auditoria e conciliação segura de dados.
+                            API corporativa para liquidação e gerenciamento de fluxos financeiros com foco em auditoria
+                            e segurança.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">C#</span>
@@ -197,7 +228,8 @@
                 </div>
 
                 <!-- Projeto 2 -->
-                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full">
+                <div
+                    class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full hover:border-gray-700 transition">
                     <div
                         class="overflow-hidden bg-slate-950 flex items-center justify-center p-4 h-48 border-b border-gray-800">
                         <img alt="Mieten - RentalCars" src="image/sistema-Web-rentalCars.png"
@@ -206,8 +238,8 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-white mb-2">Mieten — Plataforma RentalCars</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
-                            Plataforma fim a fim para locação de veículos. Interface fluida integrada a regras complexas
-                            de backend para reservas, disponibilidade e faturamento.
+                            Plataforma web para gestão e locação de veículos com integrações de regras de negócios de
+                            disponibilidade e faturamento.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span
@@ -221,7 +253,8 @@
                 </div>
 
                 <!-- Projeto 3 -->
-                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full">
+                <div
+                    class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full hover:border-gray-700 transition">
                     <div
                         class="overflow-hidden bg-slate-950 flex items-center justify-center p-4 h-48 border-b border-gray-800">
                         <img alt="Housez" src="image/Housez.png"
@@ -230,8 +263,8 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-white mb-2">Housez — Imóveis de Alto Padrão</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
-                            Solução web focada em alta performance de carregamento e SEO para o mercado de compra e
-                            venda de imóveis de luxo.
+                            Aplicação focada em alta velocidade, UX responsiva e otimização de SEO para o setor de
+                            mercado imobiliário.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span
@@ -245,7 +278,8 @@
                 </div>
 
                 <!-- Projeto 4 -->
-                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full">
+                <div
+                    class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full hover:border-gray-700 transition">
                     <div
                         class="overflow-hidden bg-slate-950 flex items-center justify-center p-4 h-48 border-b border-gray-800">
                         <img alt="BuildMaster" src="image/buildMaster-erp.png"
@@ -254,15 +288,13 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-white mb-2">BuildMaster — ERP Platform</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
-                            Plataforma focada em ERP para gerenciamento de construção civil.
+                            Sistema ERP voltado para gestão completa de processos e insumos na construção civil.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span
                                 class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">Angular</span>
-                            <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">.Net
+                            <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">.NET
                                 9</span>
-                            <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">REST
-                                API</span>
                             <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">DDD</span>
                             <span
                                 class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">MediatR</span>
@@ -271,7 +303,8 @@
                 </div>
 
                 <!-- Projeto 5 -->
-                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full">
+                <div
+                    class="group rounded-2xl overflow-hidden bg-slate-900 border border-gray-800 flex flex-col h-full hover:border-gray-700 transition">
                     <div
                         class="overflow-hidden bg-slate-950 flex items-center justify-center p-4 h-48 border-b border-gray-800">
                         <img alt="AutoParts" src="image/AutoParts.png"
@@ -280,12 +313,12 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-white mb-2">AutoParts</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
-                            Sistema completo para gestão de Auto Peças.
+                            Sistema para gestão e controle de estoques e vendas de auto peças.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span
                                 class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">Angular</span>
-                            <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">.Net
+                            <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">.NET
                                 9</span>
                             <span class="px-2.5 py-1 text-xs font-medium rounded bg-slate-800 text-gray-300">ASP.NET
                                 MVC</span>
@@ -298,44 +331,48 @@
     </section>
 
     <!-- CONTATO / CTA FINAL -->
-    <section id="contact" class="py-20 border-t border-gray-900 relative overflow-hidden">
+    <section id="contact" class="py-20 border-t border-gray-900 relative overflow-hidden bg-slate-950/80">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.05),transparent_40%)]">
         </div>
         <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Pronto para elevar o nível técnica do seu
-                produto?</h2>
-            <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-                Seja para iniciar um projeto do zero, estruturar microsserviços ou otimizar um sistema existente, entre
-                em contato para desenharmos a estratégia ideal.
+            <span
+                class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4 inline-block">
+                Agenda aberta para novos projetos
+            </span>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Vamos conversar sobre o seu projeto?</h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                Estou disponível para demandas pontuais, novos desenvolvimentos, consultorias arquiteturais ou alocação
+                em projetos.
             </p>
 
             <!-- Links / Redes -->
-            <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
+            <div class="flex flex-wrap justify-center items-center gap-4 mb-12">
                 <a href="https://wa.me/5511941425439" target="_blank"
-                    class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 transition">
-                    <span>Conversar via WhatsApp</span>
+                    class="inline-flex items-center space-x-2 px-6 py-4 rounded-xl bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20">
+                    <span>Conversar no WhatsApp</span>
                 </a>
                 <a href="mailto:lucascyrillo@gmail.com"
-                    class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-gray-800 transition">
+                    class="inline-flex items-center space-x-2 px-6 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-gray-800 text-white font-medium transition">
                     <span>lucascyrillo@gmail.com</span>
                 </a>
             </div>
 
             <div class="flex justify-center space-x-6 text-gray-500 text-sm">
                 <a href="https://www.linkedin.com/in/lcyrillo" target="_blank"
-                    class="hover:text-white transition">LinkedIn</a>
-                <a href="https://github.com/lcyrillo" target="_blank" class="hover:text-white transition">GitHub</a>
+                    class="hover:text-emerald-400 transition">LinkedIn</a>
+                <a href="https://github.com/lcyrillo" target="_blank"
+                    class="hover:text-emerald-400 transition">GitHub</a>
                 <a href="https://medium.com/@lucascyrillo" target="_blank"
-                    class="hover:text-white transition">Medium</a>
+                    class="hover:text-emerald-400 transition">Medium</a>
                 <a href="https://www.instagram.com/lucascyrillodev" target="_blank"
-                    class="hover:text-white transition">Instagram</a>
+                    class="hover:text-emerald-400 transition">Instagram</a>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="py-8 border-t border-gray-900 bg-slate-950 text-center text-xs text-gray-600">
-        <p>&copy; 2026 • Lucas Cyrillo • Engenharia de Software Especializada. Todos os direitos reservados.</p>
+        <p>&copy; 2026 • Lucas Cyrillo • Engenharia de Software. Todos os direitos reservados.</p>
     </footer>
 
 </body>
